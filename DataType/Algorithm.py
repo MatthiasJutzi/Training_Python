@@ -1,1 +1,0 @@
-# Preparing algorithms for data processing
