@@ -1,2 +1,0 @@
-#connectivity test microsoft account
-
