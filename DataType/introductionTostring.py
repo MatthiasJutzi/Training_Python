@@ -42,3 +42,10 @@ greeting[0] = 'H' # TypeError: 'str' object does not support item assignment
 #String length
 my_string = 'Hello world!'
 print(len(my_string))  # 13 
+
+# Cancaténation
+my_str_1 = 'Hello'
+my_str_2 = "World"
+
+str_plus_str = my_str_1 + ' ' + my_str_2
+print(str_plus_str) # Hello World
