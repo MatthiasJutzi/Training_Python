@@ -28,7 +28,26 @@ myList1 = ['hello', 'world']
 joinmyList1 = ' '.join(myList1)
 print(joinmyList1)
 
-# startwith()
+# startwith(prefix)
+myStr6 = 'hello world'
+startwithmyStr6 = myStr6.stratwith('hello')
+print(startwithmyStr6)
+
+# enwith(suffix)
+myStr7 = 'hello world'
+endwithmyStr7 = myStr7.endwith('world')
+print(endwithmyStr7)
+
+# find(substring)
+myStr8 = 'hello world'
+findmyStr8 = myStr8.find('world')
+print(findmyStr8)
+
+# count(substring)
+myStr9 = 'hello world'
+countmyStr9 = myStr9.count('o')
+print(countmyStr9)
+
 
 
 myList1 = ['Red','Green','Blue']
