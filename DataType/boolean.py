@@ -6,8 +6,8 @@ print(3 != 4) # True
 print(3 >= 4) # False
 print(3 <= 4) # True
 
-if condition:
-    pass # Code to execute if condition is True
+""" if condition:
+    pass # Code to execute if condition is True """
 
 age = 18
 
@@ -16,18 +16,18 @@ if age >= 18:
 
     age = 18
 
-if age >= 18:
+""" if age >= 18:
 print('You are an adult') # IndentationError: expected an indented block after 'if' statement on line 20
-
+ """
 age = 12
 
 if age >= 18:
     print('You are an adult') # Nothing shows up in the terminal
 
-if condition:
+""" if condition:
    pass # Code to execute if condition is True
 else:
-   pass # Code to execute if condition is False
+   pass # Code to execute if condition is False """
 
 age = 12
 
@@ -38,18 +38,19 @@ else:
 
 age = 12
 
-if age >= 18:
+""" if age >= 18:
     print('You are an adult')
 print('Almost there!')
 else: # SyntaxError: invalid syntax
-    print('You are not an adult yet')
+    print('You are not an adult yet') """
 
-if condition1:
+""" if condition1:
    pass # Code to execute if condition1 is True
 elif condition2:
    pass # Code to execute if condition1 is False and condition2 is True
 else:
    pass # Code to execute if all conditions are False
+ """
 
 age = 12
 
