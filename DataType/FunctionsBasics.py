@@ -33,3 +33,4 @@ def calculate_sum(a, b):
 my_sum = calculate_sum(3, 1) # 4
 print(my_sum) # 4
 
+# function return "None" if there is no return statement in the function or if the return statement does not return any value.
