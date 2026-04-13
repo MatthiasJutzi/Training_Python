@@ -1,4 +1,10 @@
 # Part 1
+# To correctly determine scope, Python follows the LEGB rule, which stands for the following:
+# Local scope (L): Variables defined in functions or classes.
+# Enclosing scope (E): Variables defined in enclosing or nested functions.
+# Global scope (G): Variables defined at the top level of the module or file.
+# Built-in scope (B): Reserved names in Python for predefined functions, modules, keywords, and objects.
+
 # input() function is used to take input from the user. It always returns a string.
 name = input("What is your name? ")
 print("Hello " + name)
