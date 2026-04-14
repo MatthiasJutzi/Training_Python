@@ -67,7 +67,7 @@ outer_func() # Hello there!
 
 def outer_func():
     msg = 'Hello there!'
-    print(res)
+    # print(res)
 
     def inner_func():
         res = 'How are you?'
