@@ -1,4 +1,8 @@
 # Build an Apply Discount Function
 
 def applay_discount(price,discount):
-    return price * (1 - discount)
+    if price != int or price != float:
+        return print("The price should be a number")
+    elif discount != int or discount != float:
+        return print("The discount should be a number")
+    
