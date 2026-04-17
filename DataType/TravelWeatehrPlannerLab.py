@@ -21,7 +21,7 @@ if distance_mi > 1 and distance_mi <= 6:
 else:
     print(False)
 
-if distance_mi > 6 and (has_car == True or has_ride_share_app== True):
+if distance_mi > 6 and (has_car == True or has_ride_share_app == True):
     print(True)
 else:    
     print(False)
