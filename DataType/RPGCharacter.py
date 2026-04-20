@@ -12,4 +12,6 @@ def create_character(name, strength, intelligence, charisma):
         return "The character name should not contain spaces"
     
     # Stats validation
+    if not isinstance(strength, int) or not isinstance(intelligence, int) or not isinstance(charisma, int):
+        return "All stats should be integers"
     
