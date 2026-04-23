@@ -79,3 +79,55 @@ even_numbers = [6, 8, 10]
 
 numbers.append(even_numbers)
 print(numbers) # [1, 2, 3, 4, 5, [6, 8, 10]]
+
+# extend() method is used to add elements of a list to the end of another list
+numbers = [1, 2, 3, 4, 5]
+even_numbers = [6, 8, 10]
+
+numbers.extend(even_numbers)
+print(numbers) # [1, 2, 3, 4, 5, 6, 8, 10]
+
+#insert() method is used to add an element at a specific index in a list
+numbers = [1, 2, 3, 4, 5]
+numbers.insert(2, 2.5)
+
+print(numbers) # [1, 2, 2.5, 3, 4, 5]
+
+#remove() method is used to remove the first occurrence of a value from a list
+numbers = [10, 20, 30, 40, 50, 50]
+numbers.remove(50)
+
+print(numbers) # [10, 20, 30, 40, 50]
+
+numbers = [10, 20, 30, 40, 50, 50, 50]
+numbers.remove(50)
+
+print(numbers) # [10, 20, 30, 40, 50, 50] in this example, the remove() method removes the first occurrence of the value 50 from the list, so only the first 50 is removed and the other two 50s remain in the list.
+
+# pop() method is used to remove an element at a specific index and return it
+numbers = [1, 2, 3, 4, 5]
+numbers.pop(1) # The number 2 is returned
+
+numbers = [1, 2, 3, 4, 5]
+numbers.pop() # The number 5 is returned 
+
+# clear() method is used to remove all elements from a list
+numbers = [1, 2, 3, 4, 5]
+numbers.clear()
+
+print(numbers) # []
+
+# sort() method is used to sort the elements of a list in ascending order
+numbers = [19, 2, 35, 1, 67, 41]
+numbers.sort()
+
+print(numbers) # [1, 2, 19, 35, 41, 67]
+
+# sorted() function is used to return a new sorted list from the elements of an iterable
+numbers = [19, 2, 35, 1, 67, 41]
+sorted_numbers = sorted(numbers)
+
+print(numbers) # [19, 2, 35, 1, 67, 41]
+print(sorted_numbers) # [1, 2, 19, 35, 41, 67]
+
+# the difference between sort() and sorted() is that sort() modifies the original list in place and returns None, while sorted() returns a new sorted list and does not modify the original list.
