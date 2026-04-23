@@ -89,7 +89,7 @@ print(numbers) # [1, 2, 3, 4, 5, 6, 8, 10]
 
 #insert() method is used to add an element at a specific index in a list
 numbers = [1, 2, 3, 4, 5]
-numbers.insert(2, 2.5)
+numbers.insert(2, 2.5) # here we are inserting the value 2.5 at index 2. 
 
 print(numbers) # [1, 2, 2.5, 3, 4, 5]
 
@@ -131,3 +131,22 @@ print(numbers) # [19, 2, 35, 1, 67, 41]
 print(sorted_numbers) # [1, 2, 19, 35, 41, 67]
 
 # the difference between sort() and sorted() is that sort() modifies the original list in place and returns None, while sorted() returns a new sorted list and does not modify the original list.
+
+# reverse() method is used to reverse the order of the elements in a list
+numbers = [6, 5, 4, 3, 2, 1]
+numbers.reverse()
+
+print(numbers) # [1, 2, 3, 4, 5, 6]
+
+# index() method is used to return the index of the first occurrence of a value in a list
+programming_languages = ['Rust', 'Java', 'Python', 'C++']
+programming_languages.index('Java') # 1
+
+"""
+programming_languages = ['Rust', 'Java', 'Python', 'C++']
+programming_languages.index('JavaScript')
+---------
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: 'JavaScript' is not in list
+"""
