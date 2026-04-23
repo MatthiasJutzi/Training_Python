@@ -69,3 +69,13 @@ desserts[1:4] # ['Cookies', 'Ice Cream', 'Pie'] here we are slicing the list fro
 numbers = [1, 2, 3, 4, 5, 6]
 numbers[1::2] # [2, 4, 6], here we are slicing the list starting from index 1 and then taking every second element (step of 2), which gives us the elements at index 1, 3, and 5.
 
+# appened() method is used to add an element to the end of a list
+numbers = [1, 2, 3, 4, 5]
+numbers.append(6)
+print(numbers) # [1, 2, 3, 4, 5, 6]
+
+numbers = [1, 2, 3, 4, 5]
+even_numbers = [6, 8, 10]
+
+numbers.append(even_numbers)
+print(numbers) # [1, 2, 3, 4, 5, [6, 8, 10]]
