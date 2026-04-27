@@ -193,3 +193,11 @@ name, age, job = developer
 print(name) # 'Alice'
 print(age) # 34
 print(job) # 'Rust Developer'
+
+desserts = ('cake', 'pie', 'cookies', 'ice cream')
+desserts[1:3] # ('pie', 'cookies') here we are slicing the tuple from index 1 to index 3 (exclusive), which gives us the elements at index 1 and 2.
+developer = ("Jane Doe", 23, "Python Developer")
+del developer[1] # error because tuples are immutable, which means that we cannot modify 
+# their elements after they have been created. 
+# The del statement is trying to delete the element at index 1 of the developer tuple, 
+# but since tuples do not support item deletion, it raises a TypeError.
