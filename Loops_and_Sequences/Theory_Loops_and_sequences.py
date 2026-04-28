@@ -201,3 +201,38 @@ del developer[1] # error because tuples are immutable, which means that we canno
 # their elements after they have been created. 
 # The del statement is trying to delete the element at index 1 of the developer tuple, 
 # but since tuples do not support item deletion, it raises a TypeError.
+
+# .count() method is used to count the number of occurrences of a value in a tuple
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
+programming_languages.count('Rust') # 2
+
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
+programming_languages.count('JavaScript') # 0
+
+"""
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
+programming_languages.count()
+
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+TypeError: tuple.count() takes exactly one argument (0 given)
+"""
+
+# index() method is used to return the index of the first occurrence of a value in a tuple
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
+programming_languages.index('Java') # 1
+
+"""
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
+programming_languages.index('JavaScript')
+
+Traceback (most recent call last):
+  File "<stdin>", line 2, in <module>
+ValueError: tuple.index(x): x not in tuple
+"""
+
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
+programming_languages.index('Python', 3) # 5 here we are using the index() method with a start parameter of 3, 
+# which means that the search for 'Python' will start from index 3. 
+# The first occurrence of 'Python' after index 3 is at index 5, so the method returns 5.
+
