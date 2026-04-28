@@ -257,3 +257,53 @@ print(sorted(programming_languages, reverse=True))
 
 # Result
 # ['Rust', 'Rust', 'Python', 'Python', 'Java', 'C++']
+
+# For loop on a list
+programming_languages = ['Rust', 'Java', 'Python', 'C++']
+
+for language in programming_languages:
+    print(language)
+
+# Rust
+# Java
+# Python
+# C++
+
+for char in 'code':
+    print(char)  
+# c
+# o
+# d
+# e
+
+categories = ['Fruit', 'Vegetable']
+foods = ['Apple', 'Carrot', 'Banana']
+
+for category in categories:
+    for food in foods:
+        print(category, food) 
+# Fruit Apple
+# Fruit Carrot
+# Fruit Banana
+# Vegetable Apple
+# Vegetable Carrot
+# Vegetable Banana
+
+
+secret_number = 3
+guess = 0
+
+while guess != secret_number:
+    guess = int(input('Guess the number (1-5): '))
+    if guess != secret_number:
+        print('Wrong! Try again.')
+
+print('You got it!')
+""" 
+Guess the number (1-5): 2
+Wrong! Try again.
+Guess the number (1-5): 1
+Wrong! Try again.
+Guess the number (1-5): 3
+You got it!
+"""
