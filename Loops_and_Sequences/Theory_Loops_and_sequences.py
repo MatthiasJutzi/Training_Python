@@ -236,3 +236,24 @@ programming_languages.index('Python', 3) # 5 here we are using the index() metho
 # which means that the search for 'Python' will start from index 3. 
 # The first occurrence of 'Python' after index 3 is at index 5, so the method returns 5.
 
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python', 'JavaScript', 'Python')
+programming_languages.index('Python', 2, 5) # 2 here we are using the index() method with a start parameter of 2 and an end parameter of 5,
+# which means that the search for 'Python' will start from index 2 and end at index 5 (exclusive). 
+# The first occurrence of 'Python' in this range is at index 2, so the method returns 2.
+
+# sorted() function can be used to return a new sorted tuple from the elements of an iterable
+numbers = (13, 2, 78, 3, 45, 67, 18, 7)
+sorted(numbers) # [2, 3, 7, 13, 18, 45, 67, 78]
+
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
+sorted(programming_languages, key=len)
+
+# Result
+# ['C++', 'Rust', 'Java', 'Rust', 'Python', 'Python']
+
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
+
+print(sorted(programming_languages, reverse=True))
+
+# Result
+# ['Rust', 'Rust', 'Python', 'Python', 'Java', 'C++']
